@@ -1,9 +1,22 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .hero {
   height: 100vh;
   width: 100%;
@@ -39,6 +52,8 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #4da87d; /*#f9004d*/
+  display: inline-block;
+  transform: scale(1.1);
   transition: 0.4s;
 }
 .btn {
@@ -241,10 +256,17 @@ h4 {
   border-radius: 10px;
   background-color: transparent;
 }
-.contact-me {
+
+.contact {
   width: 100%;
   height: 290px;
   background: #191919;
+  display: flex;
+  align-items: center;
+}
+
+.contact-me {
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -270,10 +292,14 @@ h4 {
   transition: background 0.4s;
 }
 footer {
-  position: relative;
   width: 100%;
   height: 400px;
   background: #101010;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,14 +344,34 @@ footer p:nth-child(2) {
   bottom: 35px;
   font-size: 14px;
 }
+
+.fa-circle-arrow-up {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 40px;
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+  transition: all 0.4s;
+  z-index: 100;
+}
+.fa-circle-arrow-up:hover {
+  color: rgb(255, 255, 255);
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  background-color: rgb(58, 58, 58);
+  border-radius: 4px;
+  background-color: #939393;
 }
 ::-webkit-scrollbar-track {
-  border-radius: 2px;
-  background-color: rgb(206, 206, 206);
+  /* border-radius: 4px; */
+  background-color: #3a3a3a;
 }

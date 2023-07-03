@@ -15,20 +15,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script defer src="./program.js"></script>
 </head>
 
 <body>
 
+  <a href="#top-of-page" class="go-up hidden"><i class="fa-solid fa-circle-arrow-up"></i></a>
+
   <!-- Main section start -->
-  <div class="hero">
+  <div class="hero" id="top-of-page">
     <nav>
       <h2 class="logo">Portfo<span>lio</span></h2>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Contact Us</a></li>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#about-me">About Me</a></li>
+        <li><a class="nav-link" href="#service">Services</a></li>
+        <li><a class="nav-link" href="#">Skills</a></li>
+        <li><a class="nav-link" href="#contact">Contact Me</a></li>
       </ul>
       <a href="#" class="btn">Subscribe</a>
     </nav>
@@ -45,9 +49,9 @@
     </div>
   </div>
 
-  <!-- About Us section -->
-  <section class="about">
-    <div class="main">
+  <!-- About Me section -->
+  <section class="about" id="about-me">
+    <div class="main section">
       <img src="images/image2.jpg">
       <div class="about-text">
         <h2>About Me</h2>
@@ -66,67 +70,74 @@
   </section>
 
   <!-- Service Section -->
-  <div class="service">
-    <div class="title">
-      <h2>Our Services</h2>
-    </div>
-    <div class="box">
-      <div class="card">
-        <i class="fa-solid fa-bars"></i>
-        <h5>Web Development</h5>
-        <div class="pra">
-          <p>Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <a class="button" href="#">Read More</a>
-        </div>
-      </div>
+  <div class="service" id="service">
+    <div class="section">
 
-      <div class="card">
-        <i class="fa-regular fa-user"></i>
-        <h5>Web Development</h5>
-        <div class="pra">
-          <p>Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. fdfdfdfdfdf</p>
-          <a class="button" href="#">Read More</a>
-        </div>
+      <div class="title">
+        <h2>Our Services</h2>
       </div>
+      <div class="box">
+        <div class="card">
+          <i class="fa-solid fa-bars"></i>
+          <h5>Web Development</h5>
+          <div class="pra">
+            <p>Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</p>
+            <a class="button" href="#">Read More</a>
+          </div>
+        </div>
 
-      <div class="card">
-        <i class="fa-regular fa-bell"></i>
-        <h5>Web Development</h5>
-        <div class="pra">
-          <p>Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          <a class="button" href="#">Read More</a>
+        <div class="card">
+          <i class="fa-regular fa-user"></i>
+          <h5>Web Development</h5>
+          <div class="pra">
+            <p>Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum. fdfdfdfdfdf</p>
+            <a class="button" href="#">Read More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="fa-regular fa-bell"></i>
+          <h5>Web Development</h5>
+          <div class="pra">
+            <p>Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</p>
+            <a class="button" href="#">Read More</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Contact Me -->
-  <div class="contact-me">
-    <p>Let Me Get You A Beautiful Website.</p>
-    <a class="button-two" href="#">Hire Me</a>
+  <div class="contact" id="contact">
+    <div class="contact-me section">
+      <p>Let Me Get You A Beautiful Website.</p>
+      <a class="button-two" href="#">Hire Me</a>
+    </div>
   </div>
 
   <!-- Footer -->
   <footer>
-    <p>Hunar Nadir</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna</p>
-    <div class="social">
-      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-behance"></i></i></a>
+    <div class="footer section">
+      <p>Hunar Nadir</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna</p>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-behance"></i></i></a>
+      </div>
+      <p class="end">CopyRight &copy; By Hunar Nadir</p>
     </div>
-    <p class="end">CopyRight By Hunar Nadir</p>
   </footer>
 </body>
 
